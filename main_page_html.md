@@ -8,46 +8,47 @@
 </head>
 <body>
 
-    <header>
-        <h1>Live Caption & Note Taker</h1>
-        <p class="subtitle">Real-time captions and personal note-taking for class</p>
-    </header>
+<header>
+    <h1>Live Caption & Note Taker</h1>
+    <p class="subtitle">Real-time captions and personal note-taking for class</p>
+</header>
 
-    <main class="container">
-        <!-- Live Caption Section (Left/Top) -->
-        <section class="card caption-section">
-            <div class="card-header">
-                <h2>Live Captions</h2>
-                <div class="controls">
-                    <button id="start-btn" class="btn primary">Start Captions</button>
-                    <button id="stop-btn" class="btn danger" disabled>Stop</button>
-                </div>
+<main class="container">
+    <!-- Live Caption Section (Left/Top) -->
+    <section class="card caption-section">
+        <div class="card-header">
+            <h2>Live Captions</h2>
+            <div class="controls">
+                <button id="start-btn" class="btn primary">Start Captions</button>
+                <button id="stop-btn" class="btn danger" disabled>Stop</button>
             </div>
-            
-            <div id="status" class="status-indicator">Status: Ready</div>
-            
-            <div id="caption-box" class="caption-display" aria-live="polite">
-                <p class="placeholder">Click "Start Captions" and speak into your microphone...</p>
-            </div>
-            
-            <button id="copy-caption-btn" class="btn secondary">Copy Captions to Notes</button>
-        </section>
+        </div>
+        
+        <div id="status" class="status-indicator">Status: Ready</div>
+        
+        <div id="caption-box" class="caption-display" aria-live="polite">
+            <p class="placeholder">Click "Start Captions" and speak into your microphone...</p>
+        </div>
+        
+        <button id="copy-caption-btn" class="btn secondary">Copy Captions to Notes</button>
+    </section>
 
-        <!-- Notes Section (Right/Bottom) -->
-        <section class="card notes-section">
-            <div class="card-header">
-                <h2>My Class Notes</h2>
-                <button id="clear-notes-btn" class="btn danger-outline">Clear Notes</button>
-            </div>
-            
-            <textarea id="notes-input" placeholder="Type your notes here or copy live captions over..."></textarea>
-        </section>
-    </main>
+    <!-- Notes Section (Right/Bottom) -->
+    <section class="card notes-section">
+        <div class="card-header">
+            <h2>My Class Notes</h2>
+            <button id="clear-notes-btn" class="btn danger-outline">Clear Notes</button>
+        </div>
+        
+        <textarea id="notes-input" placeholder="Type your notes here or copy live captions over..."></textarea>
+    </section>
+</main>
 
-    <!-- Load scripts in order -->
-    <script src="2_scripts/1_data.js"></script>
-    <script src="2_scripts/2_rules.js"></script>
-    <script src="2_scripts/3_display.js"></script>
-    <script src="2_scripts/4_start.js"></script>
+<!-- Load scripts in order -->
+<script src="2_scripts/1_data.js"></script>
+<script src="2_scripts/2_rules.js"></script>
+<script src="2_scripts/3_display.js"></script>
+<script src="2_scripts/4_start.js"></script>
+
 </body>
 </html>
